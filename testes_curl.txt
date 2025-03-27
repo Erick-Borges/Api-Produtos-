@@ -1,0 +1,10 @@
+curl -X POST http://127.0.0.1:5000/produtos -H "Content-Type: application/json" -d '{"nome": "Produto Teste", "fornecedor": "Fornecedor X", "endereco_fornecedor": "Rua ABC", "quantidade": 10, "endereco": "Rua XYZ", "preco_unitario": 99.99}'
+
+
+curl -X GET http://127.0.0.1:5000/produtos
+
+
+curl -X PUT http://127.0.0.1:5000/produtos/1 -H "Content-Type: application/json" -d '{"quantidade": 20}'
+
+
+curl -X DELETE http://127.0.0.1:5000/produtos/1
